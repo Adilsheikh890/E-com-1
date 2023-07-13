@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import Wrapper from './Components/Wrapper';
-import { ShoppingCart } from 'lucide-react';
+import { CalendarPlus, CircleDollarSign, Heart, Monitor, ShoppingCart, Truck, Users2 } from 'lucide-react';
 
 
 
@@ -12,47 +12,81 @@ export default function Hero() {
       <div>
         <div className="flex md:flex-row flex-col md:gap-40 ">
           <div className="md:w-4/6 pt-20"> 
-            <button className="bg-slate-200 font-bold rounded-lg  py-2  px-6 font-sans text-blue-800">Sale 70%</button>
+            <button className="bg-slate-200 font-bold rounded-full py-2  px-6 font-sans text-blue-800">Sale 70%</button>
             <h2 className="pt-10 font-serif  md:text-7xl text-3xl text-extrabold">An Industrial <br/>Take on <br/> Streetwear</h2>
             <p className="pt-10 text-lg text-gray-600">Anyone can beat you but no one can beat <br/> your outfit as long as you wear Dine outfits.</p>
             <div className="pt-8 mb-5">
               <Link href="/Shopping">
-            <button className="bg-black text-white rouned-full  py-2  p-1 md:px-3 flex gap-2">  <ShoppingCart  size={25}/>Start Shopping</button>
+            <button className="bg-black text-white rounded-full  py-2  p-1 md:px-3 flex gap-2">  <ShoppingCart  size={25}/>Start Shopping</button>
             </Link>
             </div>
            
           </div>
   
           {/* image */}
-          <div className="flex md:w-3/4 md:mt-10 ">
-            <Image src="/capture.png" alt="logo" width={600} height={300} className="bg-pink-400 rounded-full object-cover object-fill"></Image>
+          <div className="flex md:w-3/4 md:mt-10">
+
+            <Image src="/kopk.PNG" alt="logo" width={800} height={300} className="  rounded-full object-center  "></Image>
           </div>
+        </div>
+        
+
+        <div className="flex md:flex-row flex-col  gap-20 md:mt-40 md:pl-40">
+
+        <div className='flex  gap-5'>
+          <Truck size={30} className='mt-1'/>
+          <h2 className='font-medium'>Free Shipping  <br />on all orders over $200</h2>
+        </div>
+
+        <div className='flex  gap-5'>
+          < Users2 size={30} className='mt-1'/>
+          <h2 className='font-medium'>Dedicated Support  <br />Quick Response 24/7</h2>
+        </div>
+
+        <div className='flex  gap-5'>
+          <CircleDollarSign size={30} className='mt-1'/>
+          <h2 className='font-medium'>MoneyBack Gurrantee <br />Worry-free shopping</h2>
+        </div>
+
+
+
+
+
+
+
+
+
         </div>
   
         {/* second part */}
        <div>
-          <div className="text-center font-serif text-2xl pt-10">
+          <div className="text-center font-serif text-2xl md:mt-20">
             <h3>Our Promotions Events</h3>
           </div>
+
+          
           
           
   
           <div className="flex md:flex-row flex-col md:gap-2 ">
           {/* first */}
          <div className="md:pl-40 md:pt-20 mt-3 ">
-          <Image src="/event3.webp" alt="image" width={300} height={500} className="bg-gray-300 max-h-[300px] rounded-md"></Image>
           
-  
+        
+          <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-md">
+         
+          </Image>
+        
           </div>
         
          
          {/* second */}
-         <div className=" md:pt-20 mt-3  ">
-          <Image src="/hy.jpg" alt="image" width={300} height={500} className="max-h-[300px] rounded-md"></Image>
+         <div className=" md:pt-20 mt-3 rounded-full ">
+          <Image src="/cap.webp" alt="image" width={300} height={300} className=" h-300 max-h-[300px] "></Image>
          </div>
          {/* third */}
          <div className=" md:pt-20 mt-3  " >
-          <Image src="/kio.png" alt="image" width={300} height={400} className="max-h-[300px] rounded-md" ></Image>
+          <Image src="/white.webp" alt="image" width={300} height={300} className="max-h-[300%] h-300 rounded-md" ></Image>
          </div>
          </div>
   
@@ -65,17 +99,17 @@ export default function Hero() {
   
          <div className="flex md:flex-row flex-col md:gap-2 ">
           {/* first */}
-         <div className="md:pl-40 md:pt-10 mt-3 ">
-          <Image src="/event2.webp" alt="image" width={300} height={500} className="bg-gray-400 max-h-[300px] rounded-md "></Image>
+         <div className="md:pl-40 md:pt-10 mt-3  ">
+          <Image src="/yello.jpg" alt="image" width={300} height={300} className=" max-h-[300px] h-300 rounded-lg  "></Image>
           
          </div>
          {/* second */}
          <div className=" md:pt-10 mt-3 ">
-          <Image src="/iop.webp" alt="image" width={300} height={900} className='bg-yellow max-h-[300px] rounded-md '></Image>
+          <Image src="/gh.webp" alt="image" width={300} height={250} className=' max-h-[250px] h-250 rounded-md '></Image>
          </div>
          {/* third */}
          <div className=" md:pt-10 mt-3  " >
-          <Image src="/yhi.jpg" alt="image" width={300} height={500} className="max-h-[300px] rounded-md" ></Image>
+          <Image src="/t.jpg" alt="image" width={300} height={250} className="max-h-[250px] h-250 rounded-md" ></Image>
          </div>
          </div>
   
