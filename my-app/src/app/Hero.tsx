@@ -2,15 +2,16 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import Wrapper from './Components/Wrapper';
-import { CalendarPlus, CircleDollarSign, Heart, Monitor, ShoppingCart, Truck, Users2 } from 'lucide-react';
+import { CalendarPlus, CircleDollarSign, Heart, HeartCrack, HeartIcon, Monitor, ShoppingCart, Truck, Users2 } from 'lucide-react';
 
 
 
 export default function Hero() {
     return (
+      
   <Wrapper>
-      <div>
-        <div className="flex md:flex-row flex-col md:gap-40 ">
+      <div className='px-5'>
+        <div className="flex md:flex-row flex-col md:gap-40  ">
           <div className="md:w-4/6 pt-20"> 
             <button className="bg-slate-200 font-bold rounded-full py-2  px-6 font-sans text-blue-800">Sale 70%</button>
             <h2 className="pt-10 font-serif  md:text-7xl text-3xl text-extrabold">An Industrial <br/>Take on <br/> Streetwear</h2>
@@ -24,14 +25,14 @@ export default function Hero() {
           </div>
   
           {/* image */}
-          <div className="flex md:w-3/4 md:mt-10">
+          <div className="flex md:w-3/4 md:mt-10 mt-5 px-5 mb-10">
 
             <Image src="/kopk.PNG" alt="logo" width={800} height={300} className="  rounded-full object-center  "></Image>
           </div>
         </div>
         
 
-        <div className="flex md:flex-row flex-col  gap-20 md:mt-40 md:pl-40">
+        <div className="flex md:flex-row flex-col  md:gap-20 gap-8 md:mt-40 md:pl-40 px-5">
 
         <div className='flex  gap-5'>
           <Truck size={30} className='mt-1'/>
@@ -60,36 +61,31 @@ export default function Hero() {
   
         {/* second part */}
        <div>
-          <div className="text-center font-serif text-2xl md:mt-20">
+          <div className="text-center font-serif text-2xl md:mt-20 mt-10">
             <h3>Our Promotions Events</h3>
           </div>
-
-          
-          
-          
-  
           <div className="flex md:flex-row flex-col md:gap-2 ">
+
           {/* first */}
-         <div className="md:pl-40 md:pt-20 mt-3 ">
-          
-        
-          <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-md">
-         
+         <div className="md:pl-40 md:pt-20 mt-3 relative ">
+          <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-xl ">
           </Image>
-        
+          <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg">Headphone</h3>
+          <HeartIcon size={10} className='absolute bottom-0 pl-10'/>
           </div>
         
          
          {/* second */}
-         <div className=" md:pt-20 mt-3 rounded-full ">
-          <Image src="/cap.webp" alt="image" width={300} height={300} className=" h-300 max-h-[300px] "></Image>
+         <div className=" md:pt-20 mt-3  relative  ">
+          <Image src="/cap.webp" alt="image" width={300} height={300} className=" h-300 max-h-[300px] rounded-xl "></Image>
+          <h3 className="absolute bottom-4 pl-4 text-white font-extrabold text-lg">9FORTY Cap</h3>
          </div>
          {/* third */}
-         <div className=" md:pt-20 mt-3  " >
-          <Image src="/white.webp" alt="image" width={300} height={300} className="max-h-[300%] h-300 rounded-md" ></Image>
+         <div className=" md:pt-20 mt-3  relative " >
+          <Image src="/white.webp" alt="image" width={300} height={300} className="max-h-[300%] h-300 rounded-xl" ></Image>
+          <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg"> RAISE White Shoes</h3>
          </div>
          </div>
-  
          </div>
          
   
@@ -99,24 +95,26 @@ export default function Hero() {
   
          <div className="flex md:flex-row flex-col md:gap-2 ">
           {/* first */}
-         <div className="md:pl-40 md:pt-10 mt-3  ">
-          <Image src="/yello.jpg" alt="image" width={300} height={300} className=" max-h-[300px] h-300 rounded-lg  "></Image>
-          
+         <div className="md:pl-40 md:pt-10 mt-3 relative ">
+          <Image src="/yello.jpg" alt="image" width={300} height={300} className="  h-300 rounded-xl"></Image>
+          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Sweat Shirt</h3>
          </div>
          {/* second */}
-         <div className=" md:pt-10 mt-3 ">
-          <Image src="/gh.webp" alt="image" width={300} height={250} className=' max-h-[250px] h-250 rounded-md '></Image>
+         <div className=" md:pt-10 mt-3 relative ">
+          <Image src="/lp.webp" alt="image" width={300} height={300} className= ' h-300 rounded-xl '></Image>
+          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Laptop Bag</h3>
          </div>
          {/* third */}
-         <div className=" md:pt-10 mt-3  " >
-          <Image src="/t.jpg" alt="image" width={300} height={250} className="max-h-[250px] h-250 rounded-md" ></Image>
+         <div className=" md:pt-10 md:mt-4  relative" >
+          <Image src="/shoes.webp" alt="image" width={310} height={300} className=" h-300  max-h-300 bg-pink-300 rounded-xl" ></Image>
+          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Running Shoes</h3>
          </div>
          </div>
   
          {/* new page  */}
-         <div className=" bg-gray-100   ">
+         <div className=" bg-pink-300 ">
   
-          <div className='flex mdflex-row gap-2 md:pl-10 md:w-1/2 mt-20 '>
+          <div className=' flex mdflex-row gap-2 md:pl-10 md:w-1/2 mt-20 '>
             <div>
             <h3 className="text-black  font-bold mt-10">Using Good Quality <br/> Materials</h3>
             <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
@@ -138,16 +136,17 @@ export default function Hero() {
             <h3 className="text-black  font-bold mt-10">Discount for Bulk  <br/> Orders</h3>
             <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
             </div>
+
+            </div>
+           
+
             </div>
             
   
             {/* right side */}
-            <div className='flex mdflex-row gap-2 md:pl-10  mt-5 '>
-            <span>
-            <h3 className="text-black  font-bold mt-10">Modern Fashion <br/> Design</h3>
-            <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-            </span>
-            </div>
+
+            
+            
         </div>
   
         {/* last page */}
@@ -181,7 +180,7 @@ export default function Hero() {
              <div className="mb-40">
              <button
                 type="submit"
-                className="mx-auto block px-5 py-2  rounded-md  bg-gradient-to-b from-gray-300 text-black to-gray-600"
+                className="mx-auto block px-5 py-2  rounded-full  bg-gradient-to-b from-gray-300 text-black to-gray-600"
               >
                 Get started
               </button>
@@ -191,8 +190,9 @@ export default function Hero() {
             </div>
             </div>
             
-            </div>
+            
             </Wrapper>
+            
     )
   }
   

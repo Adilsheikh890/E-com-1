@@ -3,7 +3,7 @@ import React from "react";
 const Wrapper = ({ children, className } :any) => {
     return (
         <div
-            className={`w-full max-w-[1380px] px-20 md:py-10  mx-auto ${
+            className={`md:w-full md:max-w-[1380px] md:px-20 md:py-10  md:mx-auto ${
                 className || ""
             }`}
         >

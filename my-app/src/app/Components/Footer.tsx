@@ -7,7 +7,7 @@ import { Facebook, Linkedin, Twitch, Twitter } from 'lucide-react'
 export default function Footer() {
     return (
     <Wrapper>
-     <div className=" flex md:flex-row flex-col gap-[30px] pb-10">
+     <div className=" flex md:flex-row flex-col gap-[30px] pb-10 px-5">
                   <div className="md:w-5/6">
                   <Link href="/">
                              <Image src="/logo.webp" alt='logo' width={150} height={150} ></Image>
@@ -52,7 +52,7 @@ export default function Footer() {
                   </div>
                   </div>
                   {/* second part */}
-                  <div className="flex md:flex-row flex-col gap-5   pt-10  border-t-2 border-orange-500">
+                  <div className="flex md:flex-row flex-col gap-5 px-5 pb-2  pt-10  border-t-2 border-orange-500">
                   <div className="md:w-2/4">
                   <h3>Copyright © 2022 Dine <br/> Market </h3>
                   
