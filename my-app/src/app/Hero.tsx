@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import Wrapper from './Components/Wrapper';
-import { CalendarPlus, CircleDollarSign, Heart, HeartCrack, HeartIcon, Monitor, ShoppingCart, Truck, Users2 } from 'lucide-react';
+import { CalendarPlus, CircleDollarSign, Heart, HeartCrack, HeartIcon, Monitor, ShoppingBag, ShoppingCart, Truck, Users2 } from 'lucide-react';
 
 
 
@@ -17,7 +17,7 @@ export default function Hero() {
             <h2 className="pt-10 font-serif  md:text-7xl text-3xl text-extrabold">An Industrial <br/>Take on <br/> Streetwear</h2>
             <p className="pt-10 text-lg text-gray-600">Anyone can beat you but no one can beat <br/> your outfit as long as you wear Dine outfits.</p>
             <div className="pt-8 mb-5">
-              <Link href="/Shopping">
+              <Link href="/Product">
             <button className="bg-black text-white rounded-full  py-2  p-1 md:px-3 flex gap-2">  <ShoppingCart  size={25}/>Start Shopping</button>
             </Link>
             </div>
@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
         
 
-        <div className="flex md:flex-row flex-col  md:gap-20 gap-8 md:mt-40 md:pl-40 px-5">
+        <div className="flex md:flex-row flex-col  md:gap-20 gap-8 md:mt-40 md:pl-[10%] ">
 
         <div className='flex  gap-5'>
           <Truck size={30} className='mt-1'/>
@@ -48,26 +48,17 @@ export default function Hero() {
           <CircleDollarSign size={30} className='mt-1'/>
           <h2 className='font-medium'>MoneyBack Gurrantee <br />Worry-free shopping</h2>
         </div>
-
-
-
-
-
-
-
-
-
         </div>
   
         {/* second part */}
        <div>
-          <div className="text-center font-serif text-2xl md:mt-20 mt-10">
+          <div className="text-center font-serif font-bold text-2xl md:mt-20 pr-[6%] mt-10">
             <h3>Our Promotions Events</h3>
           </div>
           <div className="flex md:flex-row flex-col md:gap-2 ">
 
           {/* first */}
-         <div className="md:pl-40 md:pt-20 mt-3 relative ">
+         <div className="md:pl-20 px-35 pr-3  md:pt-20 mt-3 relative ">
           <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-xl ">
           </Image>
           <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg">Headphone</h3>
@@ -93,9 +84,10 @@ export default function Hero() {
   
          {/* secomnd 3 images */}
   
-         <div className="flex md:flex-row flex-col md:gap-2 ">
           {/* first */}
-         <div className="md:pl-40 md:pt-10 mt-3 relative ">
+         <div className="flex md:flex-row flex-col md:gap-2  ">
+
+         <div className="md:pl-20 px-35 pr-3 md:pt-10 mt-3 relative ">
           <Image src="/yello.jpg" alt="image" width={300} height={300} className="  h-300 rounded-xl"></Image>
           <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Sweat Shirt</h3>
          </div>
@@ -112,46 +104,44 @@ export default function Hero() {
          </div>
   
          {/* new page  */}
-         <div className=" bg-pink-300 ">
-  
-          <div className=' flex mdflex-row gap-2 md:pl-10 md:w-1/2 mt-20 '>
-            <div>
-            <h3 className="text-black  font-bold mt-10">Using Good Quality <br/> Materials</h3>
-            <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-            </div>
-  
-            <div>
-            <h3 className="text-black  font-bold mt-10">100% Handmade <br/> Products</h3>
-            <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-            </div>
-            </div>
-  
-            <div className='flex mdflex-row gap-2 md:pl-10 md:w-1/2 mt-5 '>
-            <div>
-            <h3 className="text-black  font-bold mt-10">Modern Fashion <br/> Design</h3>
-            <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-            </div>
-  
-            <div>
-            <h3 className="text-black  font-bold mt-10">Discount for Bulk  <br/> Orders</h3>
-            <p className="font-sans text-gray-600">Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
-            </div>
-
-            </div>
-           
-
-            </div>
+         <div className="  mt-10 bg-slate-800 flex md:flex-row md:gap-20 flex-col rounded-xl">
+          <div className='rounded-xl'>
             
-  
-            {/* right side */}
+            <Image src="/hy.jpg" alt='image' width={800} height={200} />
 
-            
+          </div>
+          <div className=' pl-8'>
+            <h1 className='mt-20 font-bold text-white pb-8 text-xl  '>T-Shirt Occasion</h1>
+            <h4 className='font-serif text-yellow-400'>Simply put t-shirts are amazing for everyday wear. They are super comfy 
+              and come in a seemingly unlimited number 
+              of colors and styles From their humble beginnings as an under garment
+               t-shirts have now become one of the most popular apparel items. </h4>
+               <h4 className='font-serif text-yellow-400'>Simply put t-shirts are amazing for everyday wear. They are super comfy 
+              and come in a seemingly unlimited number 
+              of colors and styles From their humble beginnings as an under garment
+               t-shirts have now become one of the most popular apparel items. </h4>
+               
+               <div className="pt-8 mb-5">
+              <Link href="/Product">
+            <button className=" bg-orange-500 text-white rounded-full  font-bold md:py-2  p-2 md:px-4 flex gap-2">  <ShoppingBag  size={25}/>Shop Now</button>
+            </Link>
+            </div>
+
+               
+          </div>
+          
             
         </div>
+
+
+
+
+        </div>
+
   
         {/* last page */}
         <div className="">
-        <span className="absolute text-gray-200 font-extrabold md:mb-20  md:pl-60 text-[170px]  md:text-9xl md:text-center -z-10 ">NewsLetter</span>
+        <span className="absolute text-gray-200 font-bold md:mb-20  md:pl-60  md:text-[120px] pl-[15%]  md:text-center -z-10 ">NewsLetter</span>
           <div className=" text-center  mt-40">
           
             <h1 className="font-extrabold text-black md:text-4xl">Subscribe Our Newsletter</h1>

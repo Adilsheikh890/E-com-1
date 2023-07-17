@@ -30,7 +30,7 @@ export default function Header() {
                               <Link href="/Kids">Kids</Link>
                               </li>
                               <li>
-                              <Link href="/All Products">All Product</Link>
+                              <Link href="/Product">All Product</Link>
                               </li>
                           </ul>
                       </div >
@@ -60,7 +60,7 @@ export default function Header() {
                               <Link href="/Kids">Kids</Link>
                               </li>
                               <li className="mx-5 my-2 pt-4 text-xl border-b-2">
-                              <Link href="/All Product">All Products</Link>
+                              <Link href="/Product">All Product</Link>
                               </li>
                           </ul>
                       </div >
