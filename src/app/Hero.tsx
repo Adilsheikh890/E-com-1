@@ -25,9 +25,9 @@ export default function Hero() {
           </div>
   
           {/* image */}
-          <div className="flex md:w-3/4 md:mt-10 mt-5 px-5 mb-10">
+          <div className="flex md:w-3/4 md:mt-10 pt-8  px-5 mb-5">
 
-            <Image src="/kopk.PNG" alt="logo" width={800} height={300} className="  rounded-full object-center  "></Image>
+            <Image src="/My project.png" alt="logo" width={800} height={300} className="  rounded-l-full  bg-yellow-200"></Image>
           </div>
         </div>
         
