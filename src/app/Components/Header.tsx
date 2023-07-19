@@ -10,7 +10,7 @@ export default function Header() {
     const [toggle, setToggle]= useState(true)
     return (
       
-      <div className="flex   sticky top-0 mt-4  z-10 md:mt-5 md:pl-20 pl-10 bg-white py-3 ">
+        <div className="  flex py-3 md:mt-5 md:pl-20 pl-10 sticky top-0 backdrop-blur-lg bg-gradient-to-tr from-white via-[#ffffffde] to-opacityDownColor z-20">
   
                      <div className="  ">
                       <Link href="/">
@@ -18,7 +18,7 @@ export default function Header() {
                              </Link>
                       </div>
   
-                      <div className=" md:flex hidden">
+                      <div className="md:flex hidden ">
                           <ul className=" flex md:gap-10 md:pl-60">
                               <li>
                               <Link href="/Man">Man</Link>
@@ -47,7 +47,7 @@ export default function Header() {
                         {/* over lay */}
                         
                         {!toggle && (
-                        <div className="fixed  md:pt-10 top-0 left-0 bg-gray-200  max-w-md w-[200px] h-full margin-auto  flex  text-center">
+                        <div className="fixed   top-0 left-0 bg-gray-200  max-w-md w-[200px] h-ful margin-auto  flex  text-center">
                         
                           <ul className=" pt-5 m-8 text-black ">
                               <li className="mx-5 my-2  text-xl border-b-2">
