@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="flex md:flex-row flex-col md:gap-2 ">
 
           {/* first */}
-         <div className="md:pl-20 pl-7 px-35 pr-3  md:pt-20 mt-3 relative ">
+         <div className="md:pl-20  px-35 pr-3  md:pt-20 mt-3 relative ">
           <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-xl ">
           </Image>
           <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg">Headphone</h3>
@@ -87,7 +87,7 @@ export default function Hero() {
           {/* first */}
          <div className="flex md:flex-row flex-col md:gap-2  ">
 
-         <div className="md:pl-20 pl-7 px-35 pr-3 md:pt-10 mt-3 relative ">
+         <div className="md:pl-20  px-35 pr-3 md:pt-10 mt-3 relative ">
           <Image src="/yello.jpg" alt="image" width={300} height={300} className="  h-300 rounded-xl"></Image>
           <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Sweat Shirt</h3>
          </div>
