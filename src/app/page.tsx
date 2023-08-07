@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import { Mail } from "lucide-react"
-import Footer from './Components/Footer'
-import Hero from './Hero'
 
-export default function Home() {
+import Footer from './Components/Footer'
+
+import Hero from './Hero'
+import React from 'react'
+
+export default function page() {
   return (
-    <>
-         <Hero/>
-    </>
-  )}
+    <Hero/>
+  )
+}
