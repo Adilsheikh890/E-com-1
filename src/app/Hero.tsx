@@ -5,8 +5,63 @@ import Wrapper from './Components/Wrapper';
 import { CalendarPlus, CircleDollarSign, Heart, HeartCrack, HeartIcon, Monitor, ShoppingBag, ShoppingCart, Truck, Users2 } from 'lucide-react';
 
 
+import SellingCard from './Components/SellingCard';
 
-export default function Hero() {
+
+
+
+const  Hero=():any=>{
+  const bestsell = [
+        
+    {
+        src:"/public/pu.webp",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+    {
+        src:"/public/shoes.webp",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+    {
+        src:"/public/fk.webp",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+    {
+        src:"/public/yellow.jpg",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+    {
+        src:"/public/white.webp",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+    {
+        src:"/public/gh.webp",
+        alt:"headphone",
+        tittle:"Wireless Headphone",
+        description:"Buletooth style 3 Lavender",
+        price: 189,
+    },
+  
+  
+  
+  ]
+  
+  
+
     return (
       
   <Wrapper>
@@ -51,57 +106,35 @@ export default function Hero() {
         </div>
   
         {/* second part */}
-       <div>
-          <div className="text-center font-serif font-bold text-2xl md:mt-20 pr-[6%] mt-10">
-            <h3>Our Promotions Events</h3>
-          </div>
-          <div className="flex md:flex-row flex-col md:gap-2 ">
+       
+          
 
-          {/* first */}
-         <div className="md:pl-20  px-35 pr-3  md:pt-20 mt-3 relative ">
-          <Image src="/pu.webp" alt="image" width={300} height={250}  className="max-h-[250px]  h-250 rounded-xl ">
-          </Image>
-          <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg">Headphone</h3>
-          <HeartIcon size={10} className='absolute bottom-0 pl-10'/>
+           
+        <div>
+    <div className="text-center font-bold text-2xl mt-20 md:pr-20  ">
+            <h3>Our Categerios!</h3>
           </div>
-        
-         
-         {/* second */}
-         <div className=" md:pt-20 mt-3  relative  ">
-          <Image src="/cap.webp" alt="image" width={300} height={300} className=" h-300 max-h-[300px] rounded-xl "></Image>
-          <h3 className="absolute bottom-4 pl-4 text-white font-extrabold text-lg">9FORTY Cap</h3>
-         </div>
-         {/* third */}
-         <div className=" md:pt-20 mt-3  relative " >
-          <Image src="/white.webp" alt="image" width={300} height={300} className="max-h-[300%] h-300 rounded-xl" ></Image>
-          <h3 className="absolute bottom-0 pl-4 text-white font-extrabold text-lg"> RAISE White Shoes</h3>
-         </div>
-         </div>
-         </div>
-         
-  
-  
-  
-         {/* secomnd 3 images */}
-  
-          {/* first */}
-         <div className="flex md:flex-row flex-col md:gap-2  ">
 
-         <div className="md:pl-20  px-35 pr-3 md:pt-10 mt-3 relative ">
-          <Image src="/yello.jpg" alt="image" width={300} height={300} className="  h-300 rounded-xl"></Image>
-          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Sweat Shirt</h3>
-         </div>
-         {/* second */}
-         <div className=" md:pt-10 mt-3 relative ">
-          <Image src="/lp.webp" alt="image" width={300} height={300} className= ' h-300 rounded-xl '></Image>
-          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Laptop Bag</h3>
-         </div>
-         {/* third */}
-         <div className=" md:pt-10 md:mt-4  relative" >
-          <Image src="/shoes.webp" alt="image" width={310} height={300} className=" h-300  max-h-300 bg-pink-300 rounded-xl" ></Image>
-          <h3 className="absolute bottom-3 pl-4 text-white font-extrabold text-lg">Running Shoes</h3>
-         </div>
-         </div>
+    <div className=" md:flex-row flex-col mb-10 ">
+          
+    {
+            bestsell.map((items,i):any=>{
+                <SellingCard 
+                src={items.src}
+                 alt={items.alt}
+                  tittle={items.tittle}
+                   description={items.description}
+                    price={items.price}/>
+            })
+          }
+    </div>
+    </div>
+           
+          
+  
+  
+  
+         
   
          {/* new page  */}
          <div className="  mt-10 bg-slate-800 flex md:flex-row md:gap-20 flex-col rounded-xl">
@@ -179,10 +212,11 @@ export default function Hero() {
            
             </div>
             </div>
-            
+          
+           
             
             </Wrapper>
             
     )
   }
-  
+  export default Hero
