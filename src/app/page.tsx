@@ -7,13 +7,17 @@ import SellingCard from './Components/SellingCard'
 
 
 
-export default function page() {
+ const page=()=> {
+  
   return (
     <>
     <Hero/>
     
 
-    
+  
+
+
+
   
       </>
 
@@ -21,3 +25,4 @@ export default function page() {
 }
 
 
+export default page
