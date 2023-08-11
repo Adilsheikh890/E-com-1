@@ -14,51 +14,19 @@ const  Hero=():any=>{
   const bestsell = [
         
     {
-        src:"/public/pu.webp",
+        src:"/pubic/pu.webp",
         alt:"headphone",
         tittle:"Wireless Headphone",
         description:"Buletooth style 3 Lavender",
         price: 189,
     },
-    {
-        src:"/public/shoes.webp",
-        alt:"headphone",
-        tittle:"Wireless Headphone",
-        description:"Buletooth style 3 Lavender",
-        price: 189,
-    },
-    {
-        src:"/public/fk.webp",
-        alt:"headphone",
-        tittle:"Wireless Headphone",
-        description:"Buletooth style 3 Lavender",
-        price: 189,
-    },
-    {
-        src:"/public/yellow.jpg",
-        alt:"headphone",
-        tittle:"Wireless Headphone",
-        description:"Buletooth style 3 Lavender",
-        price: 189,
-    },
-    {
-        src:"/public/white.webp",
-        alt:"headphone",
-        tittle:"Wireless Headphone",
-        description:"Buletooth style 3 Lavender",
-        price: 189,
-    },
-    {
-        src:"/public/gh.webp",
-        alt:"headphone",
-        tittle:"Wireless Headphone",
-        description:"Buletooth style 3 Lavender",
-        price: 189,
-    },
+    
+   
   
   
   
   ]
+ 
   
   
 
@@ -113,29 +81,30 @@ const  Hero=():any=>{
         <div>
     <div className="text-center font-bold text-2xl mt-20 md:pr-20  ">
             <h3>Our Categerios!</h3>
-          </div>
-
-    <div className=" md:flex-row flex-col mb-10 ">
-          
-    {
-            bestsell.map((items,i):any=>{
-                <SellingCard 
-                src={items.src}
-                 alt={items.alt}
-                  tittle={items.tittle}
-                   description={items.description}
-                    price={items.price}/>
-            })
-          }
-    </div>
-    </div>
+            
+            </div>
+       
+            <div className=" md:flex-row flex-col mb-10 ">
+      
+      {
+              bestsell.map((items,i):any =>{
+                  <SellingCard 
+                  src={items.src}
+                   alt={items.alt}
+                    tittle={items.tittle}
+                     description={items.description}
+                      price={items.price}/>
+                      
+              })
+            }
            
+      </div>
           
   
   
   
          
-  
+            </div>
          {/* new page  */}
          <div className="  mt-10 bg-slate-800 flex md:flex-row md:gap-20 flex-col rounded-xl">
           <div className='rounded-xl'>
